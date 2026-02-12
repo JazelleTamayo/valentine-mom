@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mom's Secret Garden ❤️</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="garden-page">
+    <!-- Navigation -->
+    <nav class="garden-nav">
+        <button class="nav-btn" id="backToHomeBtn">
+            <i class="fas fa-arrow-left"></i> Back to Card
+        </button>
+        <h2 class="nav-title">🌸 Mom's Secret Garden 🌸</h2>
+        <div class="nav-placeholder"></div>
+    </nav>
+
+    <div class="garden-container">
+        <!-- Hero Section with Growing Flower -->
+        <div class="flower-hero">
+            <h1 class="garden-title">For You, Mom</h1>
+            <div class="magical-flower-container">
+                <div class="magical-flower" id="magicalFlower">
+                    <!-- Flower petals will be dynamically generated -->
+                    <div class="flower-petal petal1"></div>
+                    <div class="flower-petal petal2"></div>
+                    <div class="flower-petal petal3"></div>
+                    <div class="flower-petal petal4"></div>
+                    <div class="flower-petal petal5"></div>
+                    <div class="flower-petal petal6"></div>
+                    <div class="flower-petal petal7"></div>
+                    <div class="flower-petal petal8"></div>
+                    <div class="flower-center">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="flower-stem"></div>
+                    <div class="flower-leaf leaf-left"></div>
+                    <div class="flower-leaf leaf-right"></div>
+                </div>
+                <br><br>
+                <div class="flower-message">
+                    <p>Our love grows with every memory 🌹</p>
+                    <!-- CLEAR INSTRUCTION - CLICK FLOWER -->
+                    <div class="flower-instruction">
+                        <i class="fas fa-hand-pointer"></i>
+                        <span>Click the flower for magic!</span>
+                        <i class="fas fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ===== SCROLL DOWN GUIDE - TELLS MOM TO SCROLL ===== -->
+            <div class="scroll-guide">
+                <div class="scroll-text">↓ Scroll down to see our memories ↓</div>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="scroll-hint">
+                    <i class="fas fa-mouse"></i> There's more love below!
+                </div>
+            </div>
+        </div>
+
+        <!-- Personal Message Section -->
+        <div class="message-section">
+            <div class="message-card">
+                <i class="fas fa-quote-left"></i>
+                <div class="personal-message" id="personalMessage">
+                    <p>My Dearest Mom,</p>
+                    <p>You are the sunshine that brightens my darkest days,</p>
+                    <p>The warm hug that makes everything better,</p>
+                    <p>And the love that has shaped me into who I am today.</p>
+                    <p>On this Valentine's Day, I want you to know that</p>
+                    <p>my love for you grows more beautiful with each passing day,</p>
+                    <p>just like this flower blooms just for you.</p>
+                    <p class="signature">With all my love,</p>
+                    <p class="signature-name">Your Child ❤️</p>
+                </div>
+                <i class="fas fa-quote-right"></i>
+            </div>
+            
+            <!-- ===== CONTINUE SCROLLING GUIDE ===== -->
+            <div class="continue-guide">
+                <span>Keep scrolling, Mom! Our memories are waiting ↓</span>
+            </div>
+        </div>
+
+        <!-- Photo Gallery Section - Pre-set Images of Mom -->
+        <div class="gallery-section">
+            <h2 class="section-title">
+                <i class="fas fa-camera-retro"></i> 
+                Our Beautiful Memories Together
+                <i class="fas fa-camera-retro"></i>
+            </h2>
+            <p class="section-subtitle">Each picture tells a story of our love, Mom ❤️</p>
+            
+            <!-- ===== INSTRUCTION FOR PHOTOS ===== -->
+            <div class="photo-instruction">
+                <div class="instruction-badge">
+                    <i class="fas fa-hand-pointer"></i>
+                    <span>Click any photo to see a sweet message!</span>
+                    <i class="fas fa-heart"></i>
+                </div>
+            </div>
+            
+            <div class="photo-garden">
+                <!-- Memory 1 - 1stpic.jpg -->
+                <div class="photo-frame flower-frame" data-memory="1">
+                    <div class="frame-decoration top-left"></div>
+                    <div class="frame-decoration top-right"></div>
+                    <div class="frame-decoration bottom-left"></div>
+                    <div class="frame-decoration bottom-right"></div>
+                    
+                    <div class="photo-container" id="photo1">
+                        <img src="../images/1stpic.jpg" alt="Memory 1 - Mom" class="memory-photo" id="img1">
+                        <div class="photo-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-heart"></i>
+                                <span class="memory-caption">Beautiful Mom</span>
+                                <span class="click-hint">Click me! ❤️</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-label">
+                        <i class="fas fa-camera"></i> Memory 1
+                    </div>
+                </div>
+
+                <!-- Memory 2 - 2ndpic.jpg -->
+                <div class="photo-frame flower-frame" data-memory="2">
+                    <div class="frame-decoration top-left"></div>
+                    <div class="frame-decoration top-right"></div>
+                    <div class="frame-decoration bottom-left"></div>
+                    <div class="frame-decoration bottom-right"></div>
+                    
+                    <div class="photo-container" id="photo2">
+                        <img src="../images/2ndpic.jpg" alt="Memory 2 - Mom" class="memory-photo" id="img2">
+                        <div class="photo-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-heart"></i>
+                                <span class="memory-caption">Loving Mom</span>
+                                <span class="click-hint">Click me! ❤️</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-label">
+                        <i class="fas fa-camera"></i> Memory 2
+                    </div>
+                </div>
+
+                <!-- Memory 3 - 3rdpic.jpg -->
+                <div class="photo-frame flower-frame" data-memory="3">
+                    <div class="frame-decoration top-left"></div>
+                    <div class="frame-decoration top-right"></div>
+                    <div class="frame-decoration bottom-left"></div>
+                    <div class="frame-decoration bottom-right"></div>
+                    
+                    <div class="photo-container" id="photo3">
+                        <img src="../images/3rdpic.jpg" alt="Memory 3 - Mom" class="memory-photo" id="img3">
+                        <div class="photo-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-heart"></i>
+                                <span class="memory-caption">Sweet Mom</span>
+                                <span class="click-hint">Click me! ❤️</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-label">
+                        <i class="fas fa-camera"></i> Memory 3
+                    </div>
+                </div>
+
+                <!-- Memory 4 - 4thpic.jpg -->
+                <div class="photo-frame flower-frame" data-memory="4">
+                    <div class="frame-decoration top-left"></div>
+                    <div class="frame-decoration top-right"></div>
+                    <div class="frame-decoration bottom-left"></div>
+                    <div class="frame-decoration bottom-right"></div>
+                    
+                    <div class="photo-container" id="photo4">
+                        <img src="../images/4thpic.jpg" alt="Memory 4 - Mom" class="memory-photo" id="img4">
+                        <div class="photo-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-heart"></i>
+                                <span class="memory-caption">Caring Mom</span>
+                                <span class="click-hint">Click me! ❤️</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-label">
+                        <i class="fas fa-camera"></i> Memory 4
+                    </div>
+                </div>
+
+                <!-- Memory 5 - 5thpic.jpg -->
+                <div class="photo-frame flower-frame" data-memory="5">
+                    <div class="frame-decoration top-left"></div>
+                    <div class="frame-decoration top-right"></div>
+                    <div class="frame-decoration bottom-left"></div>
+                    <div class="frame-decoration bottom-right"></div>
+                    
+                    <div class="photo-container" id="photo5">
+                        <img src="../images/5thpic.jpg" alt="Memory 5 - Mom" class="memory-photo" id="img5">
+                        <div class="photo-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-heart"></i>
+                                <span class="memory-caption">Happy Mom</span>
+                                <span class="click-hint">Click me! ❤️</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-label">
+                        <i class="fas fa-camera"></i> Memory 5
+                    </div>
+                </div>
+
+                <!-- Memory 6 - 6thpic.jpg -->
+                <div class="photo-frame flower-frame" data-memory="6">
+                    <div class="frame-decoration top-left"></div>
+                    <div class="frame-decoration top-right"></div>
+                    <div class="frame-decoration bottom-left"></div>
+                    <div class="frame-decoration bottom-right"></div>
+                    
+                    <div class="photo-container" id="photo6">
+                        <img src="../images/6thpic.jpg" alt="Memory 6 - Mom" class="memory-photo" id="img6">
+                        <div class="photo-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-heart"></i>
+                                <span class="memory-caption">My Valentine Mom</span>
+                                <span class="click-hint">Click me! ❤️</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-label">
+                        <i class="fas fa-camera"></i> Memory 6
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Memory Navigation Dots -->
+            <div class="memory-navigation">
+                <span class="memory-dot active" data-memory="1">1</span>
+                <span class="memory-dot" data-memory="2">2</span>
+                <span class="memory-dot" data-memory="3">3</span>
+                <span class="memory-dot" data-memory="4">4</span>
+                <span class="memory-dot" data-memory="5">5</span>
+                <span class="memory-dot" data-memory="6">6</span>
+            </div>
+            
+            <!-- ===== NAVIGATION INSTRUCTION ===== -->
+            <div class="navigation-instruction">
+                <i class="fas fa-circle-info"></i>
+                <span>Click the dots above to jump between memories!</span>
+            </div>
+        </div>
+
+        <!-- ===== FINAL SECTION - HEARTFELT MESSAGE FOR MOM ===== -->
+<div class="garden-actions">
+    <div class="final-message-container">
+        <div class="final-hearts">
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-heart"></i>
+        </div>
+        
+        <h2 class="final-heading">For You, Mom</h2>
+        
+        <div class="final-love-letter">
+            <p>Every flower in this garden,</p>
+            <p>Every memory in these photos,</p>
+            <p>Every heartbeat of this page,</p>
+            <p>Was made just for you.</p>
+            
+            <p class="final-message-emphasis">You are my forever Valentine.</p>
+            
+            <div class="final-signature-line">
+                <span>With all my love,</span>
+                <span class="final-signature-name">Your Child ❤️</span>
+            </div>
+        </div>
+        
+        <div class="final-hug">
+            <i class="fas fa-heart-circle"></i>
+            <span>Sending you the biggest hug!</span>
+            <i class="fas fa-heart-circle"></i>
+        </div>
+        
+        <div class="back-to-flower">
+            <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" class="back-to-flower-btn">
+                <i class="fas fa-arrow-up"></i>
+                Back to Our Flower
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </div>
+        
+        <p class="final-note">
+            <i class="fas fa-camera"></i> You can visit this garden anytime, Mom. These memories are forever ours. ❤️
+        </p>
+    </div>
+</div>
+
+    <!-- Flower Petals Animation Container -->
+    <div class="petal-rain" id="petalRain"></div>
+
+    <!-- Custom JavaScript -->
+    <script src="../js/surprise.js"></script>
+</body>
+</html>
