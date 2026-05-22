@@ -9,6 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize all features
     initNavigation();
     initMagicalFlower();
+    // Wire hero CTA button to trigger flower magic
+    const heroCTA = document.getElementById('heroClickBtn');
+    if (heroCTA) {
+        heroCTA.addEventListener('click', function() {
+            const flower = document.getElementById('magicalFlower');
+            if (flower) flower.click();
+        });
+    }
     initPreSetImages();
     initMemoryNavigation();
     initSendButton();

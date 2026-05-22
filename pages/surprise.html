@@ -20,49 +20,56 @@
     </nav>
 
     <div class="garden-container">
-        <!-- Hero Section with Growing Flower -->
+        <!-- Hero Section with Growing Flower - Two Column Layout -->
         <div class="flower-hero">
-            <h1 class="garden-title">For You, Mom</h1>
-            <div class="magical-flower-container">
-                <div class="magical-flower" id="magicalFlower">
-                    <!-- Flower petals will be dynamically generated -->
-                    <div class="flower-petal petal1"></div>
-                    <div class="flower-petal petal2"></div>
-                    <div class="flower-petal petal3"></div>
-                    <div class="flower-petal petal4"></div>
-                    <div class="flower-petal petal5"></div>
-                    <div class="flower-petal petal6"></div>
-                    <div class="flower-petal petal7"></div>
-                    <div class="flower-petal petal8"></div>
-                    <div class="flower-center">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <div class="flower-stem"></div>
-                    <div class="flower-leaf leaf-left"></div>
-                    <div class="flower-leaf leaf-right"></div>
-                </div>
-                <br><br>
-                <div class="flower-message">
-                    <p>Our love grows with every memory 🌹</p>
-                    <!-- CLEAR INSTRUCTION - CLICK FLOWER -->
-                    <div class="flower-instruction">
-                        <i class="fas fa-hand-pointer"></i>
-                        <span>Click the flower for magic!</span>
-                        <i class="fas fa-heart"></i>
-                    </div>
+            <!-- Left: text column -->
+            <div class="hero-text-col">
+                <p class="hero-eyebrow"><span class="hero-eyebrow-line"></span> For You, Mom</p>
+                <h1 class="garden-title">A Garden<br>Grown with<br><em class="garden-title-em">Love</em></h1>
+                <p class="hero-tagline">
+                    Every petal holds a memory,<br>
+                    every leaf a moment we've shared.<br>
+                    This garden blooms just for you.
+                </p>
+                <div class="flower-instruction hero-cta-btn" id="heroClickBtn">
+                    <i class="fas fa-hand-pointer"></i>
+                    <span>Click the flower for magic!</span>
+                    <i class="fas fa-heart"></i>
                 </div>
             </div>
-            
-            <!-- ===== SCROLL DOWN GUIDE - TELLS MOM TO SCROLL ===== -->
-            <div class="scroll-guide">
-                <div class="scroll-text">↓ Scroll down to see our memories ↓</div>
-                <div class="scroll-arrow">
-                    <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-chevron-down"></i>
-                    <i class="fas fa-chevron-down"></i>
+
+            <!-- Right: flower column -->
+            <div class="hero-flower-col">
+                <div class="magical-flower-container">
+                    <div class="magical-flower" id="magicalFlower">
+                        <div class="flower-petal petal1"></div>
+                        <div class="flower-petal petal2"></div>
+                        <div class="flower-petal petal3"></div>
+                        <div class="flower-petal petal4"></div>
+                        <div class="flower-petal petal5"></div>
+                        <div class="flower-petal petal6"></div>
+                        <div class="flower-petal petal7"></div>
+                        <div class="flower-petal petal8"></div>
+                        <div class="flower-center">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="flower-stem"></div>
+                        <div class="flower-leaf leaf-left"></div>
+                        <div class="flower-leaf leaf-right"></div>
+                    </div>
                 </div>
-                <div class="scroll-hint">
-                    <i class="fas fa-mouse"></i> There's more love below!
+
+                <!-- Scroll cue under flower -->
+                <div class="scroll-guide">
+                    <div class="scroll-text">↓ Scroll down to see our memories ↓</div>
+                    <div class="scroll-arrow">
+                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="scroll-hint">
+                        <i class="fas fa-mouse"></i> There's more love below!
+                    </div>
                 </div>
             </div>
         </div>
